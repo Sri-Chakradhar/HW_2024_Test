@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
     public int verticalmove = 2000;
-    public int horizontalmove = 1000;
+    public int horizontalmove = 2000;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey("a")){
             rb.AddForce(-verticalmove * Time.deltaTime,0,0);
         };
-        if(Input.GetKey("a")){
+        if(Input.GetKey("d")){
             rb.AddForce(verticalmove * Time.deltaTime,0,0);
         };
     }
